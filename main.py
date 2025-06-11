@@ -10,12 +10,12 @@ today_date = datetime.now().strftime("%d/%m/%Y")
 now_time = datetime.now().strftime("%X")
 # print(os.environ["APP_ID"])
 
-SHEETY_TOKEN = os.environ["SHEETY_TOKEN"]
-APP_ID = os.environ["APP_ID"]
-API_KEY = os.environ["API_KEY"]
+SHEETY_TOKEN = "BEARER TOKEN"
+APP_ID = "YOUR APP ID"
+API_KEY = "YOUR API KEY"
 
-ex_endpoint = os.environ["ex_endpoint"]
-google_sheet_endpoint = os.environ["google_sheet_endpoint"]
+ex_endpoint = https://trackapi.nutritionix.com/v2/natural/exercise
+google_sheet_endpoint = https://api.sheety.co/188eeb90042b7352d04553b4b668fec5/workoutTracker/workouts
 print(SHEETY_TOKEN, APP_ID, API_KEY, ex_endpoint, google_sheet_endpoint)
 
 headers_NUT = {
