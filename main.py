@@ -8,7 +8,7 @@ HEIGHT_CM = 169
 AGE = 24
 today_date = datetime.now().strftime("%d/%m/%Y")
 now_time = datetime.now().strftime("%X")
-# print(os.environ["APP_ID"])
+
 
 SHEETY_TOKEN = "BEARER TOKEN"
 APP_ID = "YOUR APP ID"
@@ -52,8 +52,4 @@ for exercise in result["exercises"]:
 
     }
     resp = requests.post(url=google_sheet_endpoint, json=data, headers=headers_sheety)
-# print(resp.json())
-#
-# response_sheety = requests.get(url=google_sheet_endpoint, headers=headers_sheety)
-# print(response_sheety.json())
-# print(os.environ["APP_ID"])
+
