@@ -2,20 +2,20 @@ import requests
 from datetime import datetime
 import os
 
-GENDER = "Male"
-WEIGHT_KG = 82.5
-HEIGHT_CM = 169
-AGE = 24
+GENDER = "MALE/FEMALE"
+WEIGHT_KG = float("ENTER WEIGHT")
+HEIGHT_CM = float("ENTER HEIGHT(cm)")
+AGE = int("Enter Age")
 today_date = datetime.now().strftime("%d/%m/%Y")
 now_time = datetime.now().strftime("%X")
 
 
-SHEETY_TOKEN = "BEARER TOKEN"
+SHEETY_TOKEN = "Your {•BEARER TOKEN}"
 APP_ID = "YOUR APP ID"
 API_KEY = "YOUR API KEY"
 
 ex_endpoint = https://trackapi.nutritionix.com/v2/natural/exercise
-google_sheet_endpoint = https://api.sheety.co/188eeb90042b7352d04553b4b668fec5/workoutTracker/workouts
+google_sheet_endpoint = str("Your google sheet endpoint along with the sheet name eg: /workouts") 
 print(SHEETY_TOKEN, APP_ID, API_KEY, ex_endpoint, google_sheet_endpoint)
 
 headers_NUT = {
